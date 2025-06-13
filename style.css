@@ -1,0 +1,22 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0b0c10;
+  color: #c5c6c7;
+}
+header {
+  background: #1f2833;
+  padding: 2rem;
+  text-align: center;
+}
+header h1 {
+  color: #66fcf1;
+}
+section {
+  padding: 2rem;
+}
+a {
+  color: #45a29e;
+}
