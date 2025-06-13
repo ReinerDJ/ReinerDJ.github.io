@@ -2,34 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Devin Reiner | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
+  <nav>
     <h1>Devin Reiner</h1>
-    <p>Cybersecurity Enthusiast | Blue Team | Wazuh | Linux</p>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h2>Cybersecurity Enthusiast</h2>
+    <p>Focused on Blue Team Operations, Wazuh, Linux, and Threat Detection</p>
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Devin, an aspiring cybersecurity professional passionate about threat detection, system hardening, and log analysis. I enjoy working with tools like Wazuh, Wireshark, and Linux-based systems. I'm constantly expanding my knowledge through labs, projects, and real-world applications.</p>
+    <h3>About Me</h3>
+    <p>I'm an aspiring cybersecurity professional with a passion for threat detection, system hardening, and log analysis. I thrive in Linux environments and enjoy working with tools like Wazuh, Wireshark, and ELK.</p>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Wazuh Lab:</strong> Set up centralized logging and alerting for Linux endpoints</li>
-      <li><strong>TryHackMe / HackTheBox:</strong> Completed various CTFs (writeups coming soon)</li>
-      <li><strong>Firewall & SIEM Config:</strong> Built secure test environments using pfSense, Suricata, and ELK</li>
-    </ul>
+    <h3>Projects</h3>
+    <div class="card">
+      <h4>Wazuh Logging Lab</h4>
+      <p>Deployed Wazuh for centralized logging and real-time alerts on Linux endpoints.</p>
+    </div>
+    <div class="card">
+      <h4>TryHackMe & HackTheBox</h4>
+      <p>Completed numerous CTF challenges to build practical exploitation and investigation skills.</p>
+    </div>
+    <div class="card">
+      <h4>Firewall + SIEM Stack</h4>
+      <p>Built a secure lab using pfSense, Suricata, and ELK to monitor simulated threats.</p>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h3>Contact</h3>
     <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a> |
        GitHub: <a href="https://github.com/ReinerDJ" target="_blank">ReinerDJ</a></p>
   </section>
+
+  <footer>
+    <p>© 2025 Devin Reiner</p>
+  </footer>
 </body>
 </html>
