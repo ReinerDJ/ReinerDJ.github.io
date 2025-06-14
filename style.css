@@ -1,24 +1,46 @@
+/* 1) Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* 2) Base body + background (desktop) */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1f2c3b, #18222d);
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: url("assets/images/bg-desktop.png") center/cover no-repeat;
+  font-family: 'Inter', sans-serif;
+  color: #e0e0e0;
+  min-height: 100vh;
 }
+
+/* 3) Responsive background swaps */
+/* Laptop & smaller */
+@media (max-width: 1440px) {
+  body {
+    background: url("assets/images/bg-laptop.png") center/cover no-repeat;
+  }
+}
+/* Mobile & smaller */
+@media (max-width: 390px) {
+  body {
+    background: url("assets/images/bg-mobile.png") center/cover no-repeat;
+  }
+}
+
+/* 4) Dashboard layout */
 .dashboard {
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 20px;
   width: 90%;
   max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
 }
-.feed, .sidebar {
+
+/* 5) Glass panels */
+.feed,
+.sidebar {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
@@ -26,6 +48,8 @@ body {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
   color: #e0e0e0;
 }
+
+/* 6) Card styles */
 .card {
   margin-bottom: 20px;
 }
@@ -69,6 +93,8 @@ body {
 .card-footer button:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+/* 7) Sidebar suggestions */
 .sidebar-card h4 {
   margin-bottom: 15px;
   font-weight: 600;
