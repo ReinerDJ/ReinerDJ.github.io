@@ -38,11 +38,14 @@ body {
   padding: 2rem 0;
 }
 
-/* 5) Glass panels */
+/* 5) Glass panels (more visible) */
 .feed,
 .sidebar {
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.05);
+  /* Increase the white overlay to 20% so it’s easier to see */
+  background: rgba(255, 255, 255, 0.20);
+  /* Add a light border for definition */
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
