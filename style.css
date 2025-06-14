@@ -7,7 +7,7 @@
 
 /* 2) Base body + background (desktop) */
 body {
-  background: url("assets/images/bg-desktop.png") center/cover no-repeat;
+  background: url("assets/images/bg_desktop.png") center/cover no-repeat;
   font-family: 'Inter', sans-serif;
   color: #e0e0e0;
   min-height: 100vh;
@@ -17,13 +17,13 @@ body {
 /* Laptop & smaller */
 @media (max-width: 1440px) {
   body {
-    background: url("assets/images/bg-laptop.png") center/cover no-repeat;
+    background: url("assets/images/bg_laptop.png") center/cover no-repeat;
   }
 }
 /* Mobile & smaller */
 @media (max-width: 390px) {
   body {
-    background: url("assets/images/bg-mobile.png") center/cover no-repeat;
+    background: url("assets/images/bg_mobile.png") center/cover no-repeat;
   }
 }
 
